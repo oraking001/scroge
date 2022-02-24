@@ -1,0 +1,27 @@
+.Collapsible__trigger {
+  display: block;
+  color: white;
+  position: relative;
+  /* padding: 12px 0px 6px 0px; */
+  margin: 22px 0px 6px 0px;
+  cursor: pointer;
+}
+.Collapsible__trigger:after {
+  /* content: url('../images/faq/line.png'); */
+  content: url('../../../assets/images/line.png');
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  display: block;
+}
+
+@media (max-width: 473px) {
+  .Collapsible__trigger {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    margin: 18px 0px 6px 0px;
+  }
+  .Collapsible__trigger:after {
+    display: none;
+  }
+}
